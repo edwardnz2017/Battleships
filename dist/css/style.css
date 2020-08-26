@@ -1,0 +1,86 @@
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gridBox {
+  height: 40px;
+  width: 40px;
+  border: 1px black solid;
+}
+
+#board1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  width: 420px;
+  margin: 10px;
+}
+
+#board2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  width: 420px;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.carrier,
+.battleship,
+.destroyer,
+.submarine,
+.patrolBoat {
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  border: 1px black solid;
+}
+
+#carrier,
+#battleship,
+#destroyer,
+#submarine,
+#patrolBoat {
+  margin: 5px;
+}
+
+#rendered-ships {
+  display: flex;
+  justify-content: center;
+}
+
+.shipColored {
+  background-color: grey;
+}
+
+.computerShipColored {
+  background-color: blue;
+}
+
+.toggleDirection {
+  display: flex;
+}
+
+.box0 {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hitArea {
+  background-color: maroon;
+}
+
+.missedArea {
+  background-color: mediumseagreen;
+}
