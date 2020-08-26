@@ -19,9 +19,6 @@ const loadBoardOne = () => {
       const createBox = document.createElement('div');
       createBox.classList.add('gridBox');
       createBox.setAttribute('id', `${user.playerBoard.grid[index].index}`);
-      createBox.addEventListener('click', (e) => {
-        console.log(user.playerBoard.grid[e.srcElement.id]);
-      });
       createBox.addEventListener('dragover', dragover_handler);
       createBox.addEventListener('drop', drop_handler);
       row.appendChild(createBox);
@@ -296,5 +293,3 @@ document.addEventListener('DOMContentLoaded', () => {
     box.innerText = 'Drag Here';
   });
 });
-
-//NEXT, IMPLEMENT A removeEventListener in the allsunk() function to stop the game once over
